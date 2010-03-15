@@ -12,6 +12,15 @@ class Client < CouchRest::ExtendedDocument
 
   timestamps!
   
+  BY_ALL = <<MAP
+    function(doc){
+      if (doc['couchrest-type'] == 'Client') {
+         emit(doc.name, null);
+      }
+    }
+MAP
+
+  view_by :all, :map => BY_ALL
   view_by :name
   view_by :created_at
 

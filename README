@@ -1,2 +1,7 @@
 Start DemoCouch 2010 - 03 - 14
 
+criando base de dados
+no console
+
+curl -X PUT http://localhost:5984/demo_database
+

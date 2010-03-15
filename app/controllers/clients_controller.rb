@@ -1,8 +1,7 @@
 class ClientsController < ApplicationController
 
   def index
-    #@clients = Client.all
-    @clients = Client.by_name 
+    @clients = Client.all 
 
     respond_to do |format|
       format.html # index.html.erb
