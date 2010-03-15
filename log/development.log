@@ -1,0 +1,1213 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#index (for 200.148.8.107 at 2010-03-14 22:45:46) [GET]
+
+ArgumentError (doc.database required for saving):
+  couchrest (0.35) lib/couchrest/core/document.rb:36:in `save'
+  couchrest (0.35) lib/couchrest/core/design.rb:61:in `save'
+  couchrest (0.35) lib/couchrest/more/./mixins/design_doc.rb:94:in `update_design_doc'
+  couchrest (0.35) lib/couchrest/more/./mixins/design_doc.rb:66:in `save_design_doc_on'
+  couchrest (0.35) lib/couchrest/more/./mixins/design_doc.rb:53:in `refresh_design_doc_on'
+  couchrest (0.35) lib/couchrest/more/./mixins/views.rb:100:in `view'
+  couchrest (0.35) lib/couchrest/more/./mixins/document_queries.rb:15:in `all'
+  app/controllers/clients_controller.rb:4:in `index'
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (105.1ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#index (for 200.148.8.107 at 2010-03-14 23:01:14) [GET]
+
+NoMethodError (undefined method `by_name' for Client:Class):
+  couchrest (0.35) lib/couchrest/more/extended_document.rb:125:in `method_missing'
+  app/controllers/clients_controller.rb:5:in `index'
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (104.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#index (for 200.148.8.107 at 2010-03-14 23:03:40) [GET]
+
+NoMethodError (undefined method `by_name' for Client:Class):
+  couchrest (0.35) lib/couchrest/more/extended_document.rb:125:in `method_missing'
+  app/controllers/clients_controller.rb:5:in `index'
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (26.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#index (for 200.148.8.107 at 2010-03-14 23:05:02) [GET]
+
+NoMethodError (undefined method `by_name' for Client:Class):
+  couchrest (0.35) lib/couchrest/more/extended_document.rb:125:in `method_missing'
+  app/controllers/clients_controller.rb:5:in `index'
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (87.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#index (for 200.148.8.107 at 2010-03-14 23:06:55) [GET]
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 402ms (View: 165, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-14 23:06:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-14 23:15:26) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+
+ActionView::TemplateError (undefined method `errors' for {"couchrest-type"=>"Client"}:Client) on line #4 of app/views/clients/new.html.erb:
+1: <h1>New client</h1>
+2: 
+3: <% form_for(@client) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+
+    app/views/clients/new.html.erb:4
+    app/views/clients/new.html.erb:3
+    app/controllers/clients_controller.rb:23:in `new'
+    passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (90.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-14 23:17:33) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+
+ActionView::TemplateError (super: no superclass method `errors') on line #4 of app/views/clients/new.html.erb:
+1: <h1>New client</h1>
+2: 
+3: <% form_for(@client) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+
+    app/models/client.rb:19:in `errors'
+    app/views/clients/new.html.erb:4
+    app/views/clients/new.html.erb:3
+    app/controllers/clients_controller.rb:23:in `new'
+    passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (37.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-14 23:17:38) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+
+ActionView::TemplateError (super: no superclass method `errors') on line #4 of app/views/clients/new.html.erb:
+1: <h1>New client</h1>
+2: 
+3: <% form_for(@client) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+
+    app/models/client.rb:19:in `errors'
+    app/views/clients/new.html.erb:4
+    app/views/clients/new.html.erb:3
+    app/controllers/clients_controller.rb:23:in `new'
+    passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (39.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-14 23:58:38) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+
+ActionView::TemplateError (super: no superclass method `errors') on line #4 of app/views/clients/new.html.erb:
+1: <h1>New client</h1>
+2: 
+3: <% form_for(@client) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+
+    app/models/client.rb:19:in `errors'
+    app/views/clients/new.html.erb:4
+    app/views/clients/new.html.erb:3
+    app/controllers/clients_controller.rb:23:in `new'
+    passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (48.5ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-14 23:59:13) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+
+ActionView::TemplateError (undefined method `errors' for {"couchrest-type"=>"Client"}:Client) on line #4 of app/views/clients/new.html.erb:
+1: <h1>New client</h1>
+2: 
+3: <% form_for(@client) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+
+    app/views/clients/new.html.erb:4
+    app/views/clients/new.html.erb:3
+    app/controllers/clients_controller.rb:23:in `new'
+    passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (96.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-15 00:00:54) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+
+ActionView::TemplateError (undefined method `errors' for {"couchrest-type"=>"Client"}:Client) on line #4 of app/views/clients/new.html.erb:
+1: <h1>New client</h1>
+2: 
+3: <% form_for(@client) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+
+    app/views/clients/new.html.erb:4
+    app/views/clients/new.html.erb:3
+    app/controllers/clients_controller.rb:23:in `new'
+    passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-15 00:00:59) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+
+ActionView::TemplateError (undefined method `errors' for {"couchrest-type"=>"Client"}:Client) on line #4 of app/views/clients/new.html.erb:
+1: <h1>New client</h1>
+2: 
+3: <% form_for(@client) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+
+    app/views/clients/new.html.erb:4
+    app/views/clients/new.html.erb:3
+    app/controllers/clients_controller.rb:23:in `new'
+    passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (44.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-15 00:01:14) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+
+ActionView::TemplateError (super: no superclass method `errors') on line #4 of app/views/clients/new.html.erb:
+1: <h1>New client</h1>
+2: 
+3: <% form_for(@client) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+
+    app/models/client.rb:19:in `errors'
+    app/views/clients/new.html.erb:4
+    app/views/clients/new.html.erb:3
+    app/controllers/clients_controller.rb:23:in `new'
+    passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (109.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-15 00:10:56) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 99ms (View: 21, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:10:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-15 00:14:37) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:14:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#create (for 200.148.8.107 at 2010-03-15 00:15:03) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"mjvAAlFp4Gous3VQqVzIun5JLtPI5eoD5GqIm0Ud0CA=", "client"=>{"name"=>"Alexandre Kenji", "telephone"=>"1234-1234", "email"=>"jose@jose.com.br"}}
+Redirected to http://kenji.virtuaserver.com.br/clients/48205b8f30ca494b11b380ce4d768338
+Completed in 49ms (DB: 0) | 302 Found [http://kenji.virtuaserver.com.br/clients]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#show (for 200.148.8.107 at 2010-03-15 00:15:03) [GET]
+  Parameters: {"id"=>"48205b8f30ca494b11b380ce4d768338"}
+
+NoMethodError (undefined method `find' for Client:Class):
+  couchrest (0.35) lib/couchrest/more/extended_document.rb:125:in `method_missing'
+  app/controllers/clients_controller.rb:13:in `show'
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (122.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#show (for 200.148.8.107 at 2010-03-15 00:24:52) [GET]
+  Parameters: {"id"=>"48205b8f30ca494b11b380ce4d768338"}
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 74ms (View: 19, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients/48205b8f30ca494b11b380ce4d768338]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:24:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#index (for 200.148.8.107 at 2010-03-15 00:24:56) [GET]
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 770ms (View: 570, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:24:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#show (for 200.148.8.107 at 2010-03-15 00:25:03) [GET]
+  Parameters: {"id"=>"48205b8f30ca494b11b380ce4d768338"}
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients/48205b8f30ca494b11b380ce4d768338]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:25:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#index (for 200.148.8.107 at 2010-03-15 00:25:05) [GET]
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 37ms (View: 25, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:25:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#destroy (for 200.148.8.107 at 2010-03-15 00:25:09) [DELETE]
+  Parameters: {"authenticity_token"=>"mjvAAlFp4Gous3VQqVzIun5JLtPI5eoD5GqIm0Ud0CA=", "id"=>"48205b8f30ca494b11b380ce4d768338"}
+
+NoMethodError (undefined method `find' for Client:Class):
+  couchrest (0.35) lib/couchrest/more/extended_document.rb:125:in `method_missing'
+  app/controllers/clients_controller.rb:59:in `destroy'
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (84.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#edit (for 200.148.8.107 at 2010-03-15 00:26:21) [GET]
+  Parameters: {"id"=>"48205b8f30ca494b11b380ce4d768338"}
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients/48205b8f30ca494b11b380ce4d768338/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:26:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#update (for 200.148.8.107 at 2010-03-15 00:26:31) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"mjvAAlFp4Gous3VQqVzIun5JLtPI5eoD5GqIm0Ud0CA=", "id"=>"48205b8f30ca494b11b380ce4d768338", "client"=>{"name"=>"Alexandre Kenji couch"}}
+Redirected to http://kenji.virtuaserver.com.br/clients/48205b8f30ca494b11b380ce4d768338
+Completed in 12ms (DB: 0) | 302 Found [http://kenji.virtuaserver.com.br/clients/48205b8f30ca494b11b380ce4d768338]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#show (for 200.148.8.107 at 2010-03-15 00:26:31) [GET]
+  Parameters: {"id"=>"48205b8f30ca494b11b380ce4d768338"}
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients/48205b8f30ca494b11b380ce4d768338]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:26:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#edit (for 200.148.8.107 at 2010-03-15 00:26:34) [GET]
+  Parameters: {"id"=>"48205b8f30ca494b11b380ce4d768338"}
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 54ms (View: 3, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients/48205b8f30ca494b11b380ce4d768338/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:26:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#index (for 200.148.8.107 at 2010-03-15 00:26:35) [GET]
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 250ms (View: 236, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:26:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#destroy (for 200.148.8.107 at 2010-03-15 00:26:39) [DELETE]
+  Parameters: {"authenticity_token"=>"mjvAAlFp4Gous3VQqVzIun5JLtPI5eoD5GqIm0Ud0CA=", "id"=>"48205b8f30ca494b11b380ce4d768338"}
+Redirected to http://kenji.virtuaserver.com.br/clients
+Completed in 11ms (DB: 0) | 302 Found [http://kenji.virtuaserver.com.br/clients/48205b8f30ca494b11b380ce4d768338]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#index (for 200.148.8.107 at 2010-03-15 00:26:39) [GET]
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 16ms (View: 4, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:26:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#new (for 200.148.8.107 at 2010-03-15 00:26:42) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:26:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#create (for 200.148.8.107 at 2010-03-15 00:27:08) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"mjvAAlFp4Gous3VQqVzIun5JLtPI5eoD5GqIm0Ud0CA=", "client"=>{"name"=>"Alexandre Kenji", "telephone"=>"1234-1234", "email"=>"couch@couch.com.br"}}
+Redirected to http://kenji.virtuaserver.com.br/clients/787c7a714c1609adbbf7a87cf360b93d
+Completed in 19ms (DB: 0) | 302 Found [http://kenji.virtuaserver.com.br/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#show (for 200.148.8.107 at 2010-03-15 00:27:08) [GET]
+  Parameters: {"id"=>"787c7a714c1609adbbf7a87cf360b93d"}
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients/787c7a714c1609adbbf7a87cf360b93d]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:27:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ClientsController#index (for 200.148.8.107 at 2010-03-15 00:27:14) [GET]
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 19ms (View: 8, DB: 0) | 200 OK [http://kenji.virtuaserver.com.br/clients]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 200.148.8.107 at 2010-03-15 00:27:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  passenger (2.2.5) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.5) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.5) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)

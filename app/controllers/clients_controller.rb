@@ -1,7 +1,8 @@
 class ClientsController < ApplicationController
 
   def index
-    @clients = Client.all
+    #@clients = Client.all
+    @clients = Client.by_name 
 
     respond_to do |format|
       format.html # index.html.erb
@@ -9,7 +10,7 @@ class ClientsController < ApplicationController
   end
 
   def show
-    @client = Client.find(params[:id])
+    @client = Client.get(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,7 +26,7 @@ class ClientsController < ApplicationController
   end
 
   def edit
-    @client = Client.find(params[:id])
+    @client = Client.get(params[:id])
   end
 
   def create
@@ -42,7 +43,7 @@ class ClientsController < ApplicationController
   end
 
   def update
-    @client = Client.find(params[:id])
+    @client = Client.get(params[:id])
 
     respond_to do |format|
       if @client.update_attributes(params[:client])
@@ -55,7 +56,7 @@ class ClientsController < ApplicationController
   end
 
   def destroy
-    @client = Client.find(params[:id])
+    @client = Client.get(params[:id])
     @client.destroy
 
     respond_to do |format|
